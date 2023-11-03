@@ -10,7 +10,8 @@ module.exports = function () {
 	//Globals
 	global.keys = require('./config/keys.js');
 
-	function setUpFEServices() {
+	/*
+ function setUpFEServices() {
 		try {
 			if (process.env["CLOUDBOOST_USER_SERVICE_SERVICE_HOST"]) {
 				global.keys.frontendServerUrl = "http://" + process.env["CLOUDBOOST_USER_SERVICE_SERVICE_HOST"] + ":" + process.env["CLOUDBOOST_USER_SERVICE_SERVICE_PORT"];
@@ -22,6 +23,7 @@ module.exports = function () {
 			console.log('Setup user service error', err)
 		}
 	}
+ */
 
 	setUpFEServices()
 
